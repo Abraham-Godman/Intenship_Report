@@ -1,0 +1,487 @@
+css
+body {background:#a20808;
+    font-family: Arial; 
+    margin: 0; 
+    text-align: center; }
+
+header {
+    background-color: hwb(305 15% 66%); /* dark muted purple */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.brand-name{color:#FFD700;
+  font-size: 60px;
+}
+
+nav a { color: #FFD700; /* Sunrise Gold */ 
+    margin: 15px; 
+    text-decoration: none; 
+    font-weight: bold; }
+
+.hero { background: #f4f4f4; 
+    padding: 50px; 
+    border-bottom: 5px solid #FFD700; 
+    border-radius: 20px;
+}
+
+
+.hero {
+  position: relative;
+  padding: 0;
+}
+
+.hero-carousel {
+  position: relative;
+  height: 350px; /* adjust height */
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.hero-image.active {
+  opacity: 1;
+}
+
+.hero-prev, .hero-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(53, 24, 170, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hero-prev { left: 0; }
+.hero-next { right: 0; }
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  width: 60%;
+}
+
+h2{
+    font-size: 60px
+}
+
+.hero-carousel {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 3s;
+}
+
+.hero-image:nth-child(1) {
+  animation: slide 9s infinite;
+}
+.hero-image:nth-child(2) {
+  animation: slide 9s 3s infinite;
+}
+.hero-image:nth-child(3) {
+  animation: slide 9s 6s infinite;
+}
+
+@keyframes slide {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  30% { opacity: 1; }
+  40% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+
+
+
+
+.our-products{
+   margin-left: 650px;
+   padding: 0px;
+}
+
+.card {
+    border: 2px solid #2D5A27;
+    padding: 40px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 2s ease;
+  
+}
+
+.card :hover{
+   
+   transform: scale(1.05);
+
+}
+
+
+
+.card-text{
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+.normal{
+    font-weight: normal;
+}
+
+
+img{
+    width: 250px;
+    height:350px;
+    border-radius: 10px;
+}
+
+button { background-color: #f1962d; 
+    color: white; 
+    border: none; 
+    margin: 10px;
+    padding: 10px; 
+    cursor: pointer; }
+
+
+
+
+.carousel-prev, .carousel-next{
+    display:inline-block;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    width: 20%;
+    margin: 10px auto;
+
+}
+
+
+
+
+.result {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+
+.product-grid {
+        
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+.carousel {
+  position: relative;
+  height: 350px; /* match image height */
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+.form-container{
+ justify-items: center;
+ background: black;
+  padding: 40px;
+  max-width: 400px;
+  margin-top: 50px;
+  margin: 50px auto;
+ 
+  border: 1px solid #a20808;
+  border-radius: 10px; 
+}
+
+h3{
+    color:rgb(8, 1, 1)
+}
+
+#contactForm input, #contactForm textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contactForm button {
+  display:block;
+  background-color: #2D5A27;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 50%;
+  margin: 10px auto;
+
+    
+
+     
+}
+
+#formFeedback {
+  margin-top: 10px;
+  color: green;
+}
+
+     #message{
+      height: 60px;
+     } 
+
+
+   
+.form-Heading{
+  color: white;
+}
+
+
+
+
+
+/* Styling for the Comment Section Container */
+#commentSection {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+/* Styling the Inputs */
+.comment-input input, .comment-input textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+
+
+.comment-input{
+    background-color: #c66464;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1)
+}
+
+
+
+
+/* Post Button Style */
+#addCommentBtn {
+    background-color: #4CAF50; /* Pig farm green */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#addCommentBtn:hover {
+    background-color: #45a049;
+}
+
+/* The Individual Comment Cards */
+.comment-card {
+    background: white;
+    border-left: 5px solid #4CAF50;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 0 4px 4px 0;
+}
+
+.comment-card strong {
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.comment-card small {
+    color: #888;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+/* Piggery FAQ Styling*/
+.faq-container {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.faq-question {
+    background-color: #2e7d32; /* Agricultural Green */
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 98%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.faq-answer {
+    background-color: #70ff75;
+    color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    /*overflow: hidden;*/
+    transition: max-height 0.2s ease-out;
+}
+.faq-question:hover {
+    background-color: #1b5e20;
+}
+
+
+
+
+
+
+
+
+
+/*news section*/
+.style-year{color:red}
+
+
+
+
+
+footer {
+    background-color: #301734; /*very dark purple*/
+    color: white;
+    padding: 10px 0 20px 0;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.footer-container {
+    display: flex; /* This creates the columns */
+    justify-content: space-around;
+    flex-wrap: wrap; /* Makes it mobile-friendly */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-col {
+    flex: 0;
+    padding: 20px;
+    min-width: 250px; /* Forces stack on small screens */
+    text-align: left;
+}
+
+.footer-col h4 {
+    color: #FFD700; /* Sunrise Gold */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+}
+
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col ul li { margin-bottom: 10px; }
+.footer-col a { color: white; text-decoration: none; }
+.footer-col a:hover { color: #FFD700; }
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 0.8rem;
+}
+
+
+
+
+.footer-btn {
+    background-color: #FFD700; /* Sunrise Gold */
+    color: #2D5A27;           /* Forest Green text */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s; /* Smooth color change */
+}
+
+.footer-btn:hover {
+    background-color: white; /* Changes to white when you hover */
+    color: #2D5A27;
+}
+
+.footer-text{
+    text-align: center;
+
+}
