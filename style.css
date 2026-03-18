@@ -38,6 +38,9 @@ nav a { color: #FFD700; /* Sunrise Gold */
   overflow: hidden;
 }
 
+.welcomeSize{
+  font-size: 38px;
+}
 .hero-image {
   position: absolute;
   opacity: 0;
