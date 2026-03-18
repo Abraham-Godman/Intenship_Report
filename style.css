@@ -1,8 +1,8 @@
-css
-body {background:#a20808;
+
+body {background:#f6f5f5;
     font-family: Arial; 
     margin: 0; 
-    text-align: center; }
+  }
 
 header {
     background-color: hwb(305 15% 66%); /* dark muted purple */
@@ -42,10 +42,15 @@ nav a { color: #FFD700; /* Sunrise Gold */
   position: absolute;
   opacity: 0;
   transition: opacity 0.5s;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
 }
 
 .hero-image.active {
   opacity: 1;
+  size: 100px;
 }
 
 .hero-prev, .hero-next {
@@ -85,14 +90,7 @@ h2{
   overflow: hidden;
 }
 
-.hero-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 3s;
-}
+
 
 .hero-image:nth-child(1) {
   animation: slide 9s infinite;
@@ -114,12 +112,31 @@ h2{
 
 
 
-
-
+/*OUR BREED*/
 .our-products{
    margin-left: 650px;
    padding: 0px;
 }
+
+/*3 columns Grid system*/
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+/* Mobile (Phones): Switch to 1 column so nothing is cut off */
+@media (max-width: 768px) {
+   .product-grid{
+        grid-template-columns: 1fr;
+    
+    }
+}
+
 
 .card {
     border: 2px solid #2D5A27;
@@ -135,8 +152,6 @@ h2{
    transform: scale(1.05);
 
 }
-
-
 
 .card-text{
     margin-top: 0px;
@@ -163,8 +178,6 @@ button { background-color: #f1962d;
     cursor: pointer; }
 
 
-
-
 .carousel-prev, .carousel-next{
     display:inline-block;
     border-radius: 10px;
@@ -177,27 +190,10 @@ button { background-color: #f1962d;
 }
 
 
-
-
 .result {
   margin-top: 5px;
   font-weight: bold;
 }
-
-
-.product-grid {
-        
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  justify-content: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-
-
-
 
 
 .carousel {
@@ -220,13 +216,33 @@ button { background-color: #f1962d;
 }
 
 
+@media screen and  (max-width: 576px){
+
+}
+  
 
 
+.blog_title{
+  text-align: center;
+}
+
+.blog_text{
+  text-align: center;
+}
 
 
-
-
-
+/*blog comment*/
+css
+#commentsContainer {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+.comment-card {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
 
 
 .form-container{
@@ -262,11 +278,7 @@ h3{
   padding: 10px;
   cursor: pointer;
   width: 50%;
-  margin: 10px auto;
-
-    
-
-     
+  margin: 10px auto;    
 }
 
 #formFeedback {
@@ -278,14 +290,10 @@ h3{
       height: 60px;
      } 
 
-
    
 .form-Heading{
   color: white;
 }
-
-
-
 
 
 /* Styling for the Comment Section Container */
@@ -307,7 +315,6 @@ h3{
 }
 
 
-
 .comment-input{
     background-color: #c66464;
     max-width: 600px;
@@ -320,8 +327,6 @@ h3{
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1)
 }
-
-
 
 
 /* Post Button Style */
@@ -359,12 +364,6 @@ h3{
     color: #888;
     font-style: italic;
 }
-
-
-
-
-
-
 
 
 /* Piggery FAQ Styling*/
@@ -405,16 +404,8 @@ h3{
 
 
 
-
-
-
-
-
-
 /*news section*/
 .style-year{color:red}
-
-
 
 
 
@@ -459,8 +450,6 @@ footer {
     padding-top: 20px;
     font-size: 0.8rem;
 }
-
-
 
 
 .footer-btn {

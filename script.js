@@ -1,3 +1,4 @@
+//........HERO SECTION........
 const heroImages = document.querySelectorAll('.hero-image');
 let heroIndex = 0;
 
@@ -10,6 +11,7 @@ document.querySelector('.hero-next').addEventListener('click', () => {
   heroIndex = (heroIndex + 1) % heroImages.length;
   showImage(heroIndex);
 });
+
 
 document.querySelector('.hero-prev').addEventListener('click', () => {
   heroIndex = (heroIndex - 1 + heroImages.length) % heroImages.length;
@@ -24,9 +26,7 @@ setInterval(() => {
 
 
 
-
-
-
+//......CALCULATOR........
 function calculatePrice1() {
     let qty = document.getElementById("tpiglet-Qty").value;
     let price = 35000; // Fixed price for a broiler
@@ -38,7 +38,6 @@ function calculatePrice1() {
         alert("Please enter a valid quantity!");
     }
 }
-
 
 function calculatePrice2() {
     let qty = document.getElementById("largepiglet-Qty").value;
@@ -53,22 +52,7 @@ function calculatePrice2() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//.........PIG CAROUSEL GALLERY..........
 document.querySelectorAll('.card').forEach(card => {
   const images = card.querySelectorAll('.carousel-image');
   let index = 0;
@@ -88,11 +72,7 @@ document.querySelectorAll('.card').forEach(card => {
 
 
 
-
-
-
-
-
+//......CONTACT FORM.......
 document.getElementById('contactForm').addEventListener('submit', (e) => {
   e.preventDefault();
   const name = document.getElementById('name').value.trim();
@@ -111,9 +91,4 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
 });
 
 
-
-
-
-
-// dynamic date
-//document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+   
