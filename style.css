@@ -20,80 +20,24 @@ nav a { color: #FFD700; /* Sunrise Gold */
     text-decoration: none; 
     font-weight: bold; }
 
+/*HERO SECTION*/
 .hero { background: #f4f4f4; 
     padding: 50px; 
     border-bottom: 5px solid #FFD700; 
     border-radius: 20px;
-}
-
-
-.hero {
-  position: relative;
+     position: relative;
   padding: 0;
+  overflow: hidden;
 }
 
 .hero-carousel {
   position: relative;
   height: 350px; /* adjust height */
   overflow: hidden;
-}
-
-.welcomeSize{
-  font-size: 38px;
-}
-.hero-image {
-  position: absolute;
-  opacity: 0;
-  transition: opacity 0.5s;
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-}
-
-.hero-image.active {
-  opacity: 1;
-  size: 100px;
-}
-
-.hero-prev, .hero-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(53, 24, 170, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.hero-prev { left: 0; }
-.hero-next { right: 0; }
-
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-  background: rgba(0,0,0,0.3);
-  padding: 20px;
-  width: 60%;
-}
-
-h2{
-    font-size: 60px
-}
-
-.hero-carousel {
   position: relative;
   height: 400px;
   overflow: hidden;
 }
-
-
 
 .hero-image:nth-child(1) {
   animation: slide 9s infinite;
@@ -113,11 +57,57 @@ h2{
   100% { opacity: 0; }
 }
 
+.hero-image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-image.active {
+  opacity: 1;
+  size: 100px;
+}
+
+.hero-prev { left: 0; }
+.hero-next { right: 0; }
+
+.hero-prev, .hero-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(53, 24, 170, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  padding: 20px;
+  width: 60%;
+}
+.welcomeSize{
+  font-size: 38px;
+}
+h2{
+    font-size: 60px
+}
 
 
 /*OUR BREED*/
 .our-products{
-   margin-left: 650px;
+  text-align: center;
    padding: 0px;
 }
 
@@ -126,30 +116,64 @@ h2{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  justify-content: center;
+  justify-content: center; 
   max-width: 800px;
   margin: 0 auto;
 }
-
-
-/* Mobile (Phones): Switch to 1 column so nothing is cut off */
-@media (max-width: 768px) {
-   .product-grid{
-        grid-template-columns: 1fr;
-    
-    }
-}
-
 
 .card {
     border: 2px solid #2D5A27;
     padding: 40px;
     border-radius: 10px;
-    width: 250px;
+    width:350px;
     transition: transform 2s ease;
-  
 }
 
+
+.breed_product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center; 
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.breed-products{
+  text-align: center;
+   padding: 0px;
+}
+
+.breed_card {
+    border: 2px solid #2D5A27;
+    padding: 60px;
+    border-radius: 10px;
+    width:350px;
+    transition: transform 2s ease;  
+}
+
+.breed-products{
+  text-align: center;
+   padding: 0px;
+}
+.carousel-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+img{
+    width:300px;
+    height:100px;
+    border-radius: 10px;
+}
 .card :hover{
    
    transform: scale(1.05);
@@ -164,13 +188,6 @@ h2{
 
 .normal{
     font-weight: normal;
-}
-
-
-img{
-    width: 250px;
-    height:350px;
-    border-radius: 10px;
 }
 
 button { background-color: #f1962d; 
@@ -199,31 +216,26 @@ button { background-color: #f1962d;
 }
 
 
-.carousel {
+.breed-images {
   position: relative;
   height: 350px; /* match image height */
   overflow: hidden;
 }
 
-.carousel-image {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 0.5s;
+
+/* Mobile (Phones): Switch to 1 column so nothing is cut off */
+@media (max-width: 768px){
+   .product-grid{
+        grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
-.carousel-image.active {
-  opacity: 1;
-}
-
-
-@media screen and  (max-width: 576px){
+@media screen and  (max-width: 576px) {
 
 }
   
-
+/*SGPF BLOG*/
 
 .blog_title{
   text-align: center;

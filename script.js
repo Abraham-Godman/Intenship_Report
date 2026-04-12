@@ -12,7 +12,6 @@ document.querySelector('.hero-next').addEventListener('click', () => {
   showImage(heroIndex);
 });
 
-
 document.querySelector('.hero-prev').addEventListener('click', () => {
   heroIndex = (heroIndex - 1 + heroImages.length) % heroImages.length;
   showImage(heroIndex);
@@ -23,7 +22,6 @@ setInterval(() => {
   heroIndex = (heroIndex + 1) % heroImages.length;
   showImage(heroIndex);
 }, 3000);
-
 
 
 //......CALCULATOR........
