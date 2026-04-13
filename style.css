@@ -210,6 +210,7 @@ button { background-color: #f1962d;
     padding: 40px;
     border-radius: 10px;
     width:250px;
+    margin-right: 10px;
     transition: transform 2s ease;
     margin-inline-start: 10px;
 }
