@@ -410,9 +410,12 @@ h3{
 
 /*=======NEWS SECTION=======*/
 .style-year{color:red}
+.news-title{
+margin-left: 20px; 
+}
 
 .post{
-margin-left: 10px; 
+margin-left: 20px; 
 margin-right:10px; 
 padding:10px;
 text-wrap-style: auto;
