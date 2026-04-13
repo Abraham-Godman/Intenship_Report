@@ -411,6 +411,14 @@ h3{
 /*=======NEWS SECTION=======*/
 .style-year{color:red}
 
+.post{
+margin-left: 10px; 
+margin-right:10px; 
+padding:10px;
+text-wrap-style: auto;
+}
+
+/*=======FOOTER=======*/
 footer {
     background-color: #301734; /*very dark purple*/
     color: white;
