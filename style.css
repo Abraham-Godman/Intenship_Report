@@ -4,6 +4,7 @@ body {background:#f6f5f5;
     margin: 0; 
   }
 
+/*=======NAV BAR=======*/
 header {
     background-color: hwb(305 15% 66%); /* dark muted purple */
     color: white;
@@ -20,14 +21,15 @@ nav a { color: #FFD700; /* Sunrise Gold */
     text-decoration: none; 
     font-weight: bold; }
 
-/*HERO SECTION*/
+
+/*=======HERO SECTION=======*/
 .hero { background: #f4f4f4; 
     padding: 50px; 
     border-bottom: 5px solid #FFD700; 
     border-radius: 20px;
-     position: relative;
-  padding: 0;
-  overflow: hidden;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
 }
 
 .hero-carousel {
@@ -98,20 +100,19 @@ nav a { color: #FFD700; /* Sunrise Gold */
   width: 60%;
 }
 .welcomeSize{
-  font-size: 38px;
+  font-size: 25px;
 }
+
 h2{
-    font-size: 60px
+    font-size: 50px
 }
 
-
-/*OUR BREED*/
+/*=======BREEDS GALLERY STYLING=======*/
 .our-products{
   text-align: center;
    padding: 0px;
 }
 
-/*3 columns Grid system*/
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -121,37 +122,22 @@ h2{
   margin: 0 auto;
 }
 
+/*3 columns Grid system*/
 .card {
     border: 2px solid #2D5A27;
     padding: 40px;
     border-radius: 10px;
-    width:350px;
+    width:200px;
     transition: transform 2s ease;
 }
-
-
+ 
 .breed_product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   justify-content: center; 
-  max-width: 800px;
   margin: 0 auto;
 }
-
-.breed-products{
-  text-align: center;
-   padding: 0px;
-}
-
-.breed_card {
-    border: 2px solid #2D5A27;
-    padding: 60px;
-    border-radius: 10px;
-    width:350px;
-    transition: transform 2s ease;  
-}
-
 .breed-products{
   text-align: center;
    padding: 0px;
@@ -177,7 +163,6 @@ img{
 .card :hover{
    
    transform: scale(1.05);
-
 }
 
 .card-text{
@@ -190,14 +175,6 @@ img{
     font-weight: normal;
 }
 
-button { background-color: #f1962d; 
-    color: white; 
-    border: none; 
-    margin: 10px;
-    padding: 10px; 
-    cursor: pointer; }
-
-
 .carousel-prev, .carousel-next{
     display:inline-block;
     border-radius: 10px;
@@ -206,15 +183,19 @@ button { background-color: #f1962d;
     cursor: pointer;
     width: 20%;
     margin: 10px auto;
-
 }
 
+button { background-color: #f1962d; 
+    color: white; 
+    border: none; 
+    margin: 10px;
+    padding: 10px; 
+    cursor: pointer; }
 
 .result {
   margin-top: 5px;
   font-weight: bold;
 }
-
 
 .breed-images {
   position: relative;
@@ -223,7 +204,19 @@ button { background-color: #f1962d;
 }
 
 
-/* Mobile (Phones): Switch to 1 column so nothing is cut off */
+/*=======OUR BREED SECTION SYLING=======*/
+.breed-card{
+  border: 2px solid #2D5A27;
+    padding: 40px;
+    border-radius: 10px;
+    width:250px;
+    transition: transform 2s ease;
+    margin-inline-start: 10px;
+}
+
+
+/*=======RESPONSIVE VIEW=======*/
+/*Switch to 1 column so nothing is cut off */
 @media (max-width: 768px){
    .product-grid{
         grid-template-columns: 1fr;
@@ -231,11 +224,12 @@ button { background-color: #f1962d;
   }
 }
 
-@media screen and  (max-width: 576px) {
+@media screen and  (max-width: 567px) {
 
 }
   
-/*SGPF BLOG*/
+
+/*=======FARM BLOG======*/
 
 .blog_title{
   text-align: center;
@@ -258,7 +252,6 @@ css
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
 }
-
 
 .form-container{
  justify-items: center;
@@ -329,7 +322,6 @@ h3{
     display: inline-block;
 }
 
-
 .comment-input{
     background-color: #c66464;
     max-width: 600px;
@@ -342,7 +334,6 @@ h3{
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1)
 }
-
 
 /* Post Button Style */
 #addCommentBtn {
@@ -381,13 +372,12 @@ h3{
 }
 
 
-/* Piggery FAQ Styling*/
+/*=======FAQ SECTION=======*/
 .faq-container {
     max-width: 800px;
     margin: 20px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 .faq-question {
     background-color: #2e7d32; /* Agricultural Green */
@@ -418,11 +408,8 @@ h3{
 }
 
 
-
-/*news section*/
+/*=======NEWS SECTION=======*/
 .style-year{color:red}
-
-
 
 footer {
     background-color: #301734; /*very dark purple*/
@@ -465,7 +452,6 @@ footer {
     padding-top: 20px;
     font-size: 0.8rem;
 }
-
 
 .footer-btn {
     background-color: #FFD700; /* Sunrise Gold */
